@@ -8,6 +8,7 @@ import TopicList from '../views/topic-list/index'
 import TopicDetail from '../views/topic-detail/index'
 import TestApi from '../views/test/api-test'
 
+// 配置动态路由
 export default () => [
   <Route path="/" render={() => <Redirect to="/list" />} exact key="first" />,
   <Route path="/list" component={TopicList} key="list" />,
